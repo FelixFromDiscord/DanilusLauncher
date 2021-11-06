@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
         self.NickEdit.setMaxLength(16)
         self.NickEdit.setObjectName("NickEdit")
         self.IPEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.IPEdit.setGeometry(QtCore.QRect(360, 530, 141, 31))
+        self.IPEdit.setGeometry(QtCore.QRect(360, 530, 141, 21))
         self.IPEdit.setStyleSheet("font: 10pt \"Yu Gothic UI\";")
         self.IPEdit.setObjectName("IPEdit")
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
@@ -62,6 +62,11 @@ class Ui_MainWindow(object):
 "font: 12pt \"Yu Gothic UI\";")
         self.textBrowser.setAutoFormatting(QtWidgets.QTextEdit.AutoAll)
         self.textBrowser.setObjectName("textBrowser")
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_2.setGeometry(QtCore.QRect(360, 560, 141, 20))
+        self.lineEdit_2.setStyleSheet("font: 10pt \"Yu Gothic UI\";")
+        self.lineEdit_2.setMaxLength(5)
+        self.lineEdit_2.setObjectName("lineEdit_2")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -73,11 +78,23 @@ class Ui_MainWindow(object):
         self.Login.setText(_translate("MainWindow", "Login"))
         self.NickEdit.setPlaceholderText(_translate("MainWindow", "Nickname"))
         self.IPEdit.setPlaceholderText(_translate("MainWindow", "IP Address"))
+        self.lineEdit.setWhatsThis(_translate("MainWindow", "Theme Name without extension"))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "Theme Name"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Yu Gothic UI\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Launcher Release</span><span style=\" font-weight:600; vertical-align:super;\">v1.1</span><span style=\" font-weight:600;\">, ChangeLog:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">EN:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- Created shell command executor to launch the client.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- Added &quot;Port&quot; line</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">RU:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- Создан процесс вызова команды для запуска клиента</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- Добавлена строка &quot;Порт&quot;</p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">-----------------------------------------------</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Launcher Release</span><span style=\" font-weight:600; vertical-align:super;\">v1</span><span style=\" font-weight:600;\">, ChangeLog:</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">EN:</span></p>\n"
@@ -85,3 +102,4 @@ class Ui_MainWindow(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">RU:</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- Создан первый дизайн интерфейса</p></body></html>"))
+        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Port"))

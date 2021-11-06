@@ -14,9 +14,13 @@ class App(QtWidgets.QMainWindow, launcher.Ui_MainWindow):
 	def login(self):
 		nick = self.NickEdit.text()
 		address = self.IPEdit.text()
+		port = self.lineEdit_2.text()
 		theme = self.lineEdit.text()
 
-
+		try:
+			subprocess.run(["client.py", "launcher", address, port, nick, theme + ".thm"])
+		except:
+			pass
 
 		time.sleep(1)
 		quit()
