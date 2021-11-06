@@ -3,9 +3,10 @@ import sys
 import json
 import subprocess
 import time
+import requests as req
 from PyQt5 import QtWidgets
 
-class ExampleApp(QtWidgets.QMainWindow, launcher.Ui_MainWindow):
+class App(QtWidgets.QMainWindow, launcher.Ui_MainWindow):
 	def __init__(self):
 		super().__init__()
 		self.setupUi(self)
@@ -15,14 +16,14 @@ class ExampleApp(QtWidgets.QMainWindow, launcher.Ui_MainWindow):
 		address = self.IPEdit.text()
 		theme = self.lineEdit.text()
 
-		print(nick)
+
 
 		time.sleep(1)
 		quit()
 
 def main():
 	app = QtWidgets.QApplication(sys.argv)
-	window = ExampleApp()
+	window = App()
 	window.show()
 	app.exec_()
 

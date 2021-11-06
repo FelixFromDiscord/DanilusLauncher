@@ -99,7 +99,7 @@ border-radius: 3px;</string>
      <string notr="true">font: 10pt &quot;Yu Gothic UI&quot;;</string>
     </property>
     <property name="text">
-     <string>фывфывфыфвы</string>
+     <string/>
     </property>
     <property name="maxLength">
      <number>16</number>

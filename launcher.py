@@ -45,6 +45,8 @@ class Ui_MainWindow(object):
         self.NickEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.NickEdit.setGeometry(QtCore.QRect(180, 530, 161, 31))
         self.NickEdit.setStyleSheet("font: 10pt \"Yu Gothic UI\";")
+        self.NickEdit.setText("")
+        self.NickEdit.setMaxLength(16)
         self.NickEdit.setObjectName("NickEdit")
         self.IPEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.IPEdit.setGeometry(QtCore.QRect(360, 530, 141, 31))
