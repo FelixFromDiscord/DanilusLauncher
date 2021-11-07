@@ -23,7 +23,7 @@ class App(QtWidgets.QMainWindow, launcher.Ui_MainWindow):
 			pass
 
 		time.sleep(1)
-		quit()
+		self.close()
 
 def main():
 	app = QtWidgets.QApplication(sys.argv)
